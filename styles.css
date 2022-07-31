@@ -16,7 +16,8 @@
     --soft-blue: #E7F5FF;
     --warm-black: #201E1C;
     --black: #282623;
-    --grey: #BABABA;
+    --grey-light: #757575;
+    --grey-dark: #808080;
     --off-white: #FAF8F7;
     --white: #FFFFFF;
 }
@@ -84,10 +85,9 @@ html {
 
 .header .header__title-container .header__button {
     position: absolute;
-    left: calc(50% - 118px);
-    top: 270px;
     display: block;
-    margin-top: 35px;
+    top: calc(100% - 24px);
+    left: calc(50% - 114px);
     padding: 15px;
     width: 229px;
     height: 48px;
@@ -112,18 +112,29 @@ html {
 
 
 
-/* Main */
+/* Contenedor principal */
 
 .main-container {
     width: 100%;
     height: auto;
     background-color: var(--off-white);
+    min-width: 320px;
 }
 
-/* .main-money-container__img {
-    background: url(./assets/img/Bitcoin.svg) center no-repeat;
-    height: 10rem;
-} */
+
+
+/*Seccion del container 1 money-container*/
+
+.main-money-container__img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url(./assets/img/Bitcoin.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .main-money-container {
     width: 100%;
@@ -133,9 +144,209 @@ html {
     text-align: center;
 }
 
-.main-money-container__title {
+.main-money-container__title-container {
     width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main-money-container .main-money-container__title {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+    /* width: 90%;
     min-width: 288px;
     max-width: 900px;
+    margin: 0 auto; */
+}
+
+.main-money-container .main-money-container__text {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--grey-light);
+}
+
+.table-container-currency {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+.table-container-currency .table-container-currency__title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    text-align: start;
+}
+
+.table-container-currency__main-container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
     margin: 0 auto;
 }
+
+.table-container-currency__main-container table {
+    width: 100%;
+    height: 100%;
+}
+.table-container-currency__main-container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey-light);
+    background-color: var(--white);
+}
+
+/*bordear la tabla*/
+
+.table-container-currency__main-container .table--top-left {
+    /* border-radius: 15px 0 0 0; */
+    border-top-left-radius: 15px;
+}
+.table-container-currency__main-container .table--top-right {
+    border-radius: 0 15px 0 0;
+}
+.table-container-currency__main-container .table--bottom-left {
+    border-radius: 0 0 0 15px;
+}
+.table-container-currency__main-container .table--bottom-right {
+    border-radius: 0 0 15px 0;
+}
+
+.table-container-currency__main-container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: var(--grey-dark);
+}
+
+.table-container-currency__main-container .trending {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-down.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.table-container-currency__main-container .down {
+    background-image: url(./assets/icons/trending-up.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.table-container-currency .table-container-currency__date {
+    width: 190px;
+    height: 30px;
+    margin: 15px auto auto;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+
+.table-container-currency .table-container-currency__date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+}
+
+/*Skills container*/
+
+.main-skills-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: var(--warm-black);
+    color: var(--white);
+}
+
+.main-skills-container__logo-batata {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    width: 40px;
+    height: 24px;
+    background-image: url(./assets/icons/batata.svg);
+    background-size: cover;
+    background-position: center;
+}
+.main-skills-container__cards-container, 
+.main-skills-container__title-container {
+    width: 90%;
+    height: 152px;
+    margin-bottom: 20px;
+    padding: 14px;
+    border-radius: 4px;
+    background-color:var(--black);
+}
+
+.main-skills-container__title-container--black {
+    background-color: inherit;
+}
+
+.main-skills-container__title-container h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.main-skills-container__title-container p {
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.8rem;
+    color: var(--grey-dark);
+}
+
+.main-skills-container__icon {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+.main-skills-container__cards-container h3 {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: start;
+}
+
+.main-skills-container__cards-container p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--grey-dark);
+    text-align: start;
+}
+
+
+/* HERO */
+
+.main-hero-container .main-hero-container__hero{
+    display: inline-block;
+    width: 100%;
+    height: 387px;
+    background-image: url(./assets/img/bitcoinbaby.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
