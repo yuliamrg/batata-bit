@@ -107,7 +107,7 @@ html {
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url(./assets/icons/down-arrow.svg);
+    background-image: url(https://i.ibb.co/SKfRCgr/down-arrow.png);
 }
 
 
@@ -130,7 +130,7 @@ html {
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url(./assets/img/Bitcoin.svg);
+    background-image: url(https://i.ibb.co/VLc350F/Bitcoin.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,14 +237,14 @@ html {
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url(./assets/icons/trending-down.svg);
+    background-image: url(https://i.ibb.co/qsc9R2G/trending-down.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .table-container-currency__main-container .down {
-    background-image: url(./assets/icons/trending-up.svg);
+    background-image: url(https://i.ibb.co/9Wt1n2C/trending-up.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -285,22 +285,26 @@ html {
     display: inline-block;
     width: 40px;
     height: 24px;
-    background-image: url(./assets/icons/batata.svg);
+    background-image: url(https://i.ibb.co/4tL16BQ/batata.png);
     background-size: cover;
     background-position: center;
 }
 .main-skills-container__cards-container, 
 .main-skills-container__title-container {
     width: 90%;
+    min-width: 288px;
+    max-width: 400px;
     height: 152px;
     margin-bottom: 20px;
     padding: 14px;
     border-radius: 4px;
     background-color:var(--black);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 }
 
 .main-skills-container__title-container--black {
     background-color: inherit;
+    box-shadow: none;
 }
 
 .main-skills-container__title-container h2 {
@@ -344,9 +348,140 @@ html {
     display: inline-block;
     width: 100%;
     height: 387px;
-    background-image: url(./assets/img/bitcoinbaby.jpg);
+    min-width: 288px;
+    background-image: url(https://i.ibb.co/H7PhtNZ/bitcoinbaby2x.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.main-hero-container__title {
+    padding-top:50px ;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--white);
+    text-align: center;
+}
+
+/*container de planes*/
+
+.main-plan-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.main-plan-container__title-container {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.main-plan-container__title {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-plan-container__text {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--grey-light);
+}
+
+/*slider*/
+
+
+.main-plan-container__slider {
+    display: flex;
+    height: 316px;
+    gap: 20px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.main-plan-container__card {
+    position: relative;
+    scroll-snap-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0;
+    padding: 0 15px;
+    background-color: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16 );
+}
+
+.main-plan-card__float-button {
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    font-size: 12px;
+    top: -17px;
+    left: 56px;
+    background-color: var(--bitcoin-orange);
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.main-plan-card__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.main-plan-card__price {
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color: var(--black);
+}
+
+.main-plan-card__price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: 25px;
+}
+
+.main-plan-card__discount {
+    font-size: 1.2rem;
+    color: var(--grey-light);
+}
+
+.main-plan-card__button {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--off-white);
+    border: 2px solid var(--bitcoin-orange);
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.main-plan-card__button span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url("https://i.ibb.co/YjjM6Dp/orange-right-arrow.png");
+    vertical-align: text-bottom;
+}
