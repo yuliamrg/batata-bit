@@ -1,0 +1,11 @@
+.main-skills-container__cards-container {
+flex-direction: row;
+flex-wrap: wrap;
+width: 930px;
+margin: 0 auto;
+}
+
+
+.main-plan-container__slider {
+    justify-content: center;
+}
